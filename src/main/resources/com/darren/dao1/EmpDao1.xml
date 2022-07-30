@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.darren.dao1.EmpDao1">
+
+  <select id="findEmpByEmpno" resultType="com.darren.bean.Emp" useCache="false">
+        select * from emp where empno = #{empno}
+  </select>
+  <select id="findEmpByEmpnoAndEname" resultType="com.darren.bean.Emp">
+        select * from emp where empno = #{empno} and ename = #{ename}
+  </select>
+  <select id="selectAll" resultType="com.darren.bean.Emp">
+        select * from emp
+  </select>
+  <select id="selectEmpByIds" resultType="com.darren.bean.Emp" >
+        select * from emp
+        where empno in
+        <foreach collection="empnos" item="empno" open="(" close=")" separator=",">
+          #{empno}
+        </foreach>
+  </select>
+  <insert id="insert">
+        insert into emp(empno,ename) values(#{empno},#{ename})
+  </insert>
+  <update id="update">
+        update emp set ename=#{ename} where empno = #{empno}
+    </update>
+  <delete id="delete">
+        delete from emp where empno = #{empno}
+    </delete>
+</mapper>

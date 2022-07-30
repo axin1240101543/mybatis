@@ -21,7 +21,7 @@
   <!-- 设置数据源和mapper.xml路径 -->
   <bean id="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
     <property name="dataSource" ref="dataSource"/>
-    <property name="mapperLocations" value="classpath:com/mashibing/dao/*.xml"/>
+    <property name="mapperLocations" value="classpath:com/darren/dao/*.xml"/>
   </bean>
 
   <!-- mapper接口的扫描 -->
@@ -29,5 +29,8 @@
     <property name="basePackage" value="com.darren.dao"/>
   </bean>
 
-
+  <!-- mapper接口的扫描 -->
+  <bean class="com.darren.MyMapperScannerConfigurer">
+    <property name="basePackage" value="com.darren.dao1"/>
+  </bean>
 </beans>

@@ -76,12 +76,12 @@
               2、在resource资源目录下，创建跟dao层一样的同级目录即可，将配置文件放到指定的目录
     -->
     <mappers>
-        <!--<mapper resource="EmpDao.xml" />
+        <!--<mapper resource="EmpDao1.xml" />
         <mapper resource="UserDao.xml"/>
         <mapper class="com.mashibing.dao.UserDaoAnnotation"></mapper>
         <mapper class="com.mashibing.dao.UserDao"></mapper>-->
         <!--如果需要引入多个配置文件，可以直接定义包的名称
         resource目录下配置的映射文件必须要具体相同的目录-->
-        <package name="com.darren.dao"/>
+        <package name="com.darren.dao1"/>
     </mappers>
 </configuration>

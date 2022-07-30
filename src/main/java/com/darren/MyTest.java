@@ -1,4 +1,4 @@
-package com.darren.test;
+package com.darren;
 
 import com.darren.bean.Emp;
 import com.darren.dao.EmpDao;
