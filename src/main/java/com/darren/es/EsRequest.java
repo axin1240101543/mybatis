@@ -68,7 +68,7 @@ public class EsRequest<T> {
     /**
      * Optional list of parameters to replace question mark (?) placeholders inside the query.
      */
-    private String[] params;
+    private T params;
 
     public String getSql() {
         return sql;
@@ -142,11 +142,11 @@ public class EsRequest<T> {
         this.indexIncludeFrozen = indexIncludeFrozen;
     }
 
-    public String[] getParams() {
+    public T getParams() {
         return params;
     }
 
-    public void setParams(String[] params) {
+    public void setParams(T params) {
         this.params = params;
     }
 }
