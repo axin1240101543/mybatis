@@ -77,6 +77,7 @@ public class Invoker {
             requestBody.put("cursor", esResponse.getCursor());
             String body = HttpUtil.createPost(esConfiguration.getUrl()).addHeaders(headers).body(requestBody).execute().body();
             esResponse = com.alibaba.fastjson.JSONObject.parseObject(body, EsResponse.class);
+            // 递归处理游标
             handleRows(data, columns, esResponse);
         }
     }
