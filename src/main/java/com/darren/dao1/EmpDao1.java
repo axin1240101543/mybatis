@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
-@Mapper
+//@Mapper
 public interface EmpDao1 {
 
     public Emp findEmpByEmpno(Integer empno);

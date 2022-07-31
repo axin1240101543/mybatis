@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.darren;
+package com.darren.spring;
 
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.logging.Logger;

@@ -30,7 +30,7 @@
   </bean>
 
   <!-- mapper接口的扫描 -->
-  <bean class="com.darren.MyMapperScannerConfigurer">
+  <!--<bean class="com.darren.spring.MyMapperScannerConfigurer">
     <property name="basePackage" value="com.darren.dao1"/>
-  </bean>
+  </bean>-->
 </beans>
