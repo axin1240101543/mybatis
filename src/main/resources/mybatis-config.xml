@@ -83,5 +83,6 @@
         <!--如果需要引入多个配置文件，可以直接定义包的名称
         resource目录下配置的映射文件必须要具体相同的目录-->
         <package name="com.darren.dao1"/>
+        <package name="com.darren.dao2"/>
     </mappers>
 </configuration>

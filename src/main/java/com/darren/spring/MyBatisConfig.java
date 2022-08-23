@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class MyBatisConfig {
 
-    private static final String BASE_PACKAGE = "com.darren.dao1";
+    private static final String BASE_PACKAGE = "com.darren.dao1;com.darren.dao2";
 
     @Bean
     public MyMapperScannerConfigurer myMapperScannerConfigurer(){
